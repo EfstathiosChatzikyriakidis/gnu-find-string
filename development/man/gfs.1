@@ -1,0 +1,101 @@
+.\"
+.\"  `gfs.1'.
+.\" 
+.\"  This file is the short manual page for the GNU fs.
+.\"
+.\"  Copyright (C) 2008  Efstathios Chatzikyriakidis (contact@efxa.org)
+.\"
+.\"  This program is free software: you can redistribute it and/or modify
+.\"  it under the terms of the GNU General Public License as published by
+.\"  the Free Software Foundation, either version 3 of the License, or
+.\"  (at your option) any later version.
+.\"
+.\"  This program is distributed in the hope that it will be useful,
+.\"  but WITHOUT ANY WARRANTY; without even the implied warranty of
+.\"  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+.\"  GNU General Public License for more details.
+.\"
+.\"  You should have received a copy of the GNU General Public License
+.\"  along with this program. If not, see <http://www.gnu.org/licenses/>.
+.\"
+.TH GFS "1" "March 2008" "gfs 1.0" "User Commands"
+
+.SH NAME
+gfs \- print lines matching a pattern.
+
+.SH SYNOPSIS
+.B gfs
+[\fIOPTIONS\fR] -e \fIPATTERN\fR [\fIFILE...\fR]
+
+.SH DESCRIPTION
+The GNU fs searches the named input \fIFILE\fRs, standard input (if no files
+are named), or environment variable \fBGFS_INPUT\fR for lines containing a
+match to the given \fIPATTERN\fR. By default, GNU fs prints the matching lines. 
+
+.SH OPTIONS
+.TP
+\fB\-r\fR, \fB\-\-reverse-match\fR
+Invert the sense of matching, to select non-matching lines.
+.TP
+\fB\-m\fR, \fB\-\-max-matches\fR
+Show the max number of matches within a file.
+.TP
+\fB\-n\fR, \fB\-\-line-number\fR
+Prefix each line with a number.
+.TP
+\fB\-i\fR, \fB\-\-ignore-case\fR
+Ignore case distinctions.
+.TP
+\fB\-e \fIPATTERN\fR\fR, \fB\-\-pattern=\fIPATTERN\fR\fR
+Use \fIPATTERN\fR as the pattern.
+.TP
+\fB\-v\fR, \fB\-\-verbose\fR
+Explain what is being done.
+.TP
+\fB\-\-help\fR, \fB\-\-usage\fR
+Display a short help and exit.
+.TP
+.B \-\-version
+Print version information and exit.
+.TP
+.B \-\-author
+Print author information and exit.
+.TP
+.B \-\-copyleft
+Print the short version of GNU/GPL and exit.
+
+.SH "ENVIRONMENT VARIABLES"
+The behavior of \fBgfs\fR is affected by the following environment variables.
+.TP
+.B GFS_INPUT
+Specifies the input file.
+
+.SH DIAGNOSTICS
+Normally, exit status is 0 if selected lines are found and
+1 otherwise. But the exit status is 2 if an error occurred.
+
+.SH AUTHOR
+Written by Efstathios Chatzikyriakidis.
+
+.SH "REPORTING BUGS"
+Email bug reports to <bug-gnu-fs@gnu.org>.
+
+.SH COPYRIGHT
+Copyright \(co 2008  Efstathios Chatzikyriakidis (contact@efxa.org)
+
+This is free software. You may redistribute copies of it under the terms
+of the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
+There is NO WARRANTY, to the extent permitted by law.
+
+.SH "SEE ALSO"
+The full documentation for
+.B gfs
+is maintained as a Texinfo manual. If the
+.B info
+and
+.B gfs
+programs are properly installed at your site, the command
+.IP
+.B info gfs
+.PP
+should give you access to the complete manual.

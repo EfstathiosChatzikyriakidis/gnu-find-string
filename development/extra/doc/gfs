@@ -1,0 +1,111 @@
+GNU find string manual 1.0
+**************************
+
+This file documents the GNU fs program (version 1.0, March 2008).
+
+   Copyright (C) 2008  Efstathios Chatzikyriakidis (contact@efxa.org)
+
+     This program is free software: you can redistribute it and/or
+     modify it under the terms of the GNU General Public License as
+     published by the Free Software Foundation, either version 3 of
+     the License, or (at your option) any later version.
+
+     This program is distributed in the hope that it will be useful,
+     but WITHOUT ANY WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+     General Public License for more details.
+
+     You should have received a copy of the GNU General Public License
+     along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+How to read this manual
+***********************
+
+   To read this manual, begin at the beginning, reading from left to
+right and top to bottom, until you get to the end. Then stop. You may
+pause for a beer anywhere in the middle as well, if you wish.
+
+   (Please note, however, that The King strongly advises against heavy
+use of prescription pharmaceuticals, based on his extensive personal
+and professional experience.)
+
+Overview
+********
+
+   The GNU fs searches the named input `FILEs', standard input (if no
+files are named), or environment variable `GFS_INPUT' for lines
+containing a match to the given `PATTERN'. By default, GNU fs prints
+the matching lines.
+
+   GNU fs is *protected* by the GNU General Public License.
+
+   GNU fs was written by Efstathios Chatzikyriakidis.
+
+Invoking
+********
+
+The format for running the `gfs' program is:
+
+   `gfs [OPTIONS] -e PATTERN [FILE...]'
+
+The `gfs' program supports the following options:
+
+`--reverse-match'
+`-r'
+     Invert the sense of matching, to select non-matching lines.
+
+`--max-matches'
+`-m'
+     Show the max number of matches within a file.
+
+`--line-number'
+`-n'
+     Prefix each line with a number.
+
+`--ignore-case'
+`-i'
+     Ignore case distinctions.
+
+`--pattern=PATTERN'
+`-e PATTERN'
+     Use PATTERN as the pattern.
+
+`--verbose'
+`-v'
+     Explain what is being done.
+
+`--help'
+     Display a short help and exit.
+
+`--usage'
+     Same as `--help' option.
+
+`--version'
+     Print version information and exit.
+
+`--author'
+     Print author information and exit.
+
+`--copyleft'
+     Print the short version of GNU/GPL and exit.
+
+Environment Variables
+*********************
+
+The behavior of gfs is affected by the following environment variables.
+
+`GFS_INPUT'
+     Specifies the input file.
+
+Diagnostics
+***********
+
+Normally, exit status is 0 if selected lines are found and 1 otherwise.
+But the exit status is 2 if an error occurred.
+
+Reporting Bugs
+**************
+
+If you find a bug in GNU fs, please send electronic mail to:
+
+   `<bug-gnu-fs@gnu.org>'

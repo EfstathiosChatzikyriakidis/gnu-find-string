@@ -1,0 +1,30 @@
+@c *** sets for the author. ***
+
+@c the name of the author.
+@set author-name Efstathios Chatzikyriakidis
+
+@c the email of the author.
+@set author-mail contact@@efxa.org
+
+@c *** sets for the manual. ***
+
+@c the version of the manual.
+@set manual-version 1.0
+
+@c *** sets for the program. ***
+
+@c the version of the program.
+@set prm-version 1.0
+
+@c the reporting bugs email.
+@set prm-report-bugs bug-gnu-fs@@gnu.org
+
+@c *** sets for the program and manual. ***
+
+@c last update, e.g: <Month Year>.
+@set last-update March 2008
+
+@c some different name references.
+@set prm-lng-name GNU find string
+@set prm-sht-name GNU fs
+@set prm-cmd-name gfs

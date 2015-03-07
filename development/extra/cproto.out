@@ -1,0 +1,62 @@
+/* gfs.c */
+extern INPUT_FILES *input_files_list;
+extern int main(int, char *[]);
+
+/* gfs-error-wrapper-funcs.c */
+extern void eprintf(char *, ...);
+extern void weprintf(char *, ...);
+extern char *estrdup(const char *);
+extern void *emalloc(size_t);
+extern FILE *efopen(const char *, const char *);
+
+/* gfs-handle-program-name.c */
+static char *name;
+extern const char *get_prog_name(void);
+extern void set_prog_name(const char *);
+
+/* gfs-input-files-list.c */
+extern INPUT_FILE *new_input_file(const char *);
+extern INPUT_FILE *add_input_file(INPUT_FILE *, INPUT_FILE *);
+extern void print_input_files(FILE *, INPUT_FILES *);
+extern void free_input_files(INPUT_FILES *);
+extern BOOL input_file_exists(INPUT_FILES *, cstring);
+extern ulong count_input_files(INPUT_FILES *);
+
+/* gfs-input-files-tasks.c */
+extern FILE_INFO check_input_file(cstring);
+static FILE_INFO file_regular(cstring);
+static FILE_INFO get_file_type(cstring);
+
+/* gfs-messages.c */
+extern cstring program_author;
+extern cstring program_version;
+extern cstring send_bugs_mail;
+extern cstring license_part_a;
+extern cstring license_part_b;
+extern cstring license_part_c;
+extern cstring usage_specify_pattern;
+extern cstring usage_part_a;
+extern cstring usage_part_b;
+extern cstring usage_part_c;
+extern cstring usage_part_d;
+extern cstring show_input_files;
+extern cstring show_search_files;
+extern cstring show_max_matches;
+
+/* gfs-parse-input-files.c */
+extern INPUT_FILES *parse_input_files(INPUT_FILES *, cint, char *[]);
+
+/* gfs-parse-options.c */
+extern OPTIONS *parse_options(OPTIONS *, cint, char *[]);
+static OPTIONS *new_options(void);
+
+/* gfs-print-info.c */
+extern void print_usage(FILE *, cint);
+extern void print_version(FILE *, cint);
+extern void print_author(FILE *, cint);
+extern void print_license(FILE *, cint);
+
+/* gfs-process-input-files.c */
+extern BOOL process_input_files(INPUT_FILES *, OPTIONS *);
+extern BOOL process_input_file(FILE *, OPTIONS *);
+static char *strlwr(char *);

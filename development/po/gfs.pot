@@ -1,0 +1,85 @@
+########
+#
+#  `gfs.pot'.
+#
+#  This file contains all the <lang> messages for the GNU fs program.
+#
+#  Copyright (C) <year>  <name> (<email>)
+#
+#  This program is free software: you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation, either version 3 of the License, or
+#  (at your option) any later version.
+# 
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#  GNU General Public License for more details.
+# 
+#  You should have received a copy of the GNU General Public License
+#  along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+#######
+
+msgid ""
+msgstr ""
+"Project-Id-Version: GNU fs 1.0\n"
+"Report-Msgid-Bugs-To: <bug-gnu-fs@gnu.org>\n"
+"POT-Creation-Date: 2008-03-25 12:59+0200\n"
+"PO-Revision-Date: 2008-03-25 13:11+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gfs-messages.c:40
+msgid "Written by Efstathios Chatzikyriakidis."
+msgstr ""
+
+#: gfs-messages.c:52
+msgid "Report bugs to <bug-gnu-fs@gnu.org>"
+msgstr ""
+
+#: gfs-messages.c:93
+msgid "You must specify a search pattern. See `--help' for details."
+msgstr ""
+
+#: gfs-messages.c:99
+msgid "Usage:"
+msgstr ""
+
+#: gfs-messages.c:105
+msgid "[OPTIONS] -e PATTERN [FILE...]"
+msgstr ""
+
+#: gfs-messages.c:112
+msgid ""
+"  -r, --reverse-match     Select and show non-matching lines. \n"
+"  -m, --max-matches       Show the max number of matches.     \n"
+"  -n, --line-number       Prefix each line with a number.     \n"
+"  -i, --ignore-case       Ignore case distinctions.           \n"
+"  -e, --pattern=PATTERN   Input matching pattern.             \n"
+msgstr ""
+
+#: gfs-messages.c:123
+msgid ""
+"  -v, --verbose           Explain what is being done.         \n"
+"                                                              \n"
+"      --help, --usage     Display this help and exit.         \n"
+"      --version           Print version information and exit. \n"
+"      --author            Print author information and exit.  \n"
+"      --copyleft          Print a short version of GNU/GPL.   \n"
+msgstr ""
+
+#: gfs-messages.c:138
+msgid "Input files:"
+msgstr ""
+
+#: gfs-messages.c:144
+msgid "Search files:"
+msgstr ""
+
+#: gfs-messages.c:150
+msgid "Number of matches:"
+msgstr ""

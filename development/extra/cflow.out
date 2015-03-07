@@ -1,0 +1,101 @@
+    1    main: int (), <gfs.c 83>
+    2       set_prog_name: void (), <gfs-handle-program-name.c 66>
+    3          estrdup: char * (), <gfs-error-wrapper-funcs.c 177>
+    4             malloc: <>
+    5             strlen: <>
+    6             eprintf: void (), <gfs-error-wrapper-funcs.c 63>
+    7                fflush: <>
+    8                get_prog_name: const char * (), <gfs-handle-program-name.c 53>
+    9                fprintf: <>
+   10                va_start: <>
+   11                vfprintf: <>
+   12                va_end: <>
+   13                strlen: <>
+   14                strerror: <>
+   15                free_input_files: void (), <gfs-input-files-list.c 156>
+   16                   free: <>
+   17                exit: <>
+   18             strcpy: <>
+   19       getenv: <>
+   20       setlocale: <>
+   21       bindtextdomain: <>
+   22       textdomain: <>
+   23       parse_options: OPTIONS * (), <gfs-parse-options.c 60>
+   24          new_options: OPTIONS * (), <gfs-parse-options.c 183>
+   25             emalloc: void * (), <gfs-error-wrapper-funcs.c 207>
+   26                malloc: <>
+   27                eprintf: 6
+   28          getopt_long: <>
+   29          print_usage: void (), <gfs-print-info.c 58>
+   30             fprintf: <>
+   31             get_prog_name: 8
+   32             exit: <>
+   33          print_version: void (), <gfs-print-info.c 94>
+   34             fprintf: <>
+   35             exit: <>
+   36          print_author: void (), <gfs-print-info.c 119>
+   37             fprintf: <>
+   38             exit: <>
+   39          print_license: void (), <gfs-print-info.c 144>
+   40             fprintf: <>
+   41             exit: <>
+   42          estrdup: 3
+   43          abort: <>
+   44       eprintf: 6
+   45       fprintf: <>
+   46       parse_input_files: INPUT_FILES * (), <gfs-parse-input-files.c 57>
+   47          input_file_exists: BOOL (), <gfs-input-files-list.c 183>
+   48             strcmp: <>
+   49          check_input_file: FILE_INFO (), <gfs-input-files-tasks.c 58>
+   50             access: <>
+   51             get_file_type: FILE_INFO (), <gfs-input-files-tasks.c 211>
+   52                stat: <>
+   53                S_ISREG: <>
+   54                S_ISDIR: <>
+   55                S_ISBLK: <>
+   56                S_ISCHR: <>
+   57                S_ISFIFO: <>
+   58             file_regular: FILE_INFO (), <gfs-input-files-tasks.c 139>
+   59                efopen: FILE * (), <gfs-error-wrapper-funcs.c 235>
+   60                   fopen: <>
+   61                   weprintf: void (), <gfs-error-wrapper-funcs.c 126>
+   62                      fflush: <>
+   63                      get_prog_name: 8
+   64                      fprintf: <>
+   65                      va_start: <>
+   66                      vfprintf: <>
+   67                      va_end: <>
+   68                      strlen: <>
+   69                      strerror: <>
+   70                fread: <>
+   71                fclose: <>
+   72                isprint: <>
+   73                isspace: <>
+   74                ispunct: <>
+   75                isalnum: <>
+   76                iscntrl: <>
+   77          add_input_file: INPUT_FILE * (), <gfs-input-files-list.c 100>
+   78          new_input_file: INPUT_FILE * (), <gfs-input-files-list.c 63>
+   79             emalloc: 25
+   80             estrdup: 3
+   81       count_input_files: ulong (), <gfs-input-files-list.c 209>
+   82       print_input_files: void (), <gfs-input-files-list.c 132>
+   83          fprintf: <>
+   84       efopen: 59
+   85       free_input_files: 15
+   86       process_input_files: BOOL (), <gfs-process-input-files.c 77>
+   87          strlwr: char * (), <gfs-process-input-files.c 503>
+   88             tolower: <>
+   89          efopen: 59
+   90          fprintf: <>
+   91          fgets: <>
+   92          strcpy: <>
+   93          strstr: <>
+   94          fclose: <>
+   95       process_input_file: BOOL (), <gfs-process-input-files.c 347>
+   96          strlwr: 87
+   97          fgets: <>
+   98          strcpy: <>
+   99          strstr: <>
+  100          fprintf: <>
+  101       fclose: <>

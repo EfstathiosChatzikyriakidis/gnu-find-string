@@ -1,0 +1,218 @@
+\input texinfo @c -*-texinfo-*-
+
+@c  `gfs.texi'.
+@c
+@c  This file is the texinfo manual page for GNU fs.
+@c
+@c  Copyright (C) 2008  Efstathios Chatzikyriakidis (contact@efxa.org)
+@c
+@c  This program is free software: you can redistribute it and/or modify
+@c  it under the terms of the GNU General Public License as published by
+@c  the Free Software Foundation, either version 3 of the License, or
+@c  (at your option) any later version.
+@c
+@c  This program is distributed in the hope that it will be useful,
+@c  but WITHOUT ANY WARRANTY; without even the implied warranty of
+@c  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+@c  GNU General Public License for more details.
+@c
+@c  You should have received a copy of the GNU General Public License
+@c  along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+@c %**start of header
+@setfilename gfs.info
+@include     sets.texi
+@settitle    @value{prm-sht-name} manual @value{manual-version}
+@c %**end of header
+
+@copying
+This file documents the @value{prm-sht-name} program 
+(version @value{prm-version}, @value{last-update}).
+
+Copyright @copyright{} 2008  @value{author-name} (@value{author-mail})
+
+@quotation
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+@end quotation
+@end copying
+
+@ifinfo
+@dircategory Utilities
+@direntry
+* @value{prm-cmd-name}: (@value{prm-cmd-name}).    @value{prm-lng-name}.
+@end direntry
+@end ifinfo
+
+@ifhtml
+@documentdescription
+@value{prm-sht-name}, @value{prm-lng-name}, @value{prm-sht-name} manual page
+@end documentdescription
+@end ifhtml
+
+@titlepage
+@title @value{prm-sht-name} manual @value{manual-version}
+@subtitle for @command{@value{prm-cmd-name}}, version @value{prm-version}.
+@subtitle last update: @value{last-update}.
+@author @value{author-name} (@email{@value{author-mail}}).
+
+@page
+@vskip 0pt plus 1filll
+@insertcopying
+@end titlepage
+
+@ifnotplaintext
+@shortcontents
+@contents
+@end ifnotplaintext
+
+@ifnottex
+@node Top, Instructions, (dir), (dir)
+@top @value{prm-lng-name} manual @value{manual-version}
+
+@insertcopying
+
+@menu
+* Instructions::            How to read this manual.
+* Overview::                Preliminary information.
+* Invoking::                How to run the command.
+* Environment Variables::   How to use environment variables.
+* Diagnostics::             How to use the exit values.
+* Problems::                Reporting bugs.
+* Concept Index::           Index of concepts.
+@end menu
+@end ifnottex
+
+@node Instructions, Overview, Top, Top
+@unnumbered How to read this manual
+@cindex How to read
+
+@indent
+To read this manual, begin at the beginning, reading from left to
+right and top to bottom, until you get to the end. Then stop. You
+may pause for a beer anywhere in the middle as well, if you wish.
+
+(Please note, however, that The King strongly advises against heavy
+use of prescription pharmaceuticals, based on his extensive personal
+and professional experience.)
+
+@node Overview, Invoking, Instructions, Top
+@unnumbered Overview
+
+@indent
+The GNU fs searches the named input `FILEs', standard input (if no files are
+named), or environment variable `GFS_INPUT' for lines containing a match to
+the given `PATTERN'. By default, GNU fs prints the matching lines. 
+
+@value{prm-sht-name} is @strong{protected} by the GNU General Public License.
+
+@value{prm-sht-name} was written by @value{author-name}.
+
+@node Invoking, Environment Variables, Overview, Top
+@unnumbered Invoking
+@cindex Command options
+
+The format for running the @command{@value{prm-cmd-name}} program is:
+
+@samp{@value{prm-cmd-name} [@var{OPTIONS}] -e @var{PATTERN} [@var{FILE...}]}
+
+@noindent
+The @command{@value{prm-cmd-name}} program supports the following options:
+
+@table @option
+@cindex @option{--reverse-match}
+@item --reverse-match
+@itemx -r
+Invert the sense of matching, to select non-matching lines.
+
+@cindex @option{--max-matches}
+@item --max-matches
+@itemx -m
+Show the max number of matches within a file.
+
+@cindex @option{--line-number}
+@item --line-number
+@itemx -n
+Prefix each line with a number.
+
+@cindex @option{--ignore-case}
+@item --ignore-case
+@itemx -i
+Ignore case distinctions.
+
+@cindex @option{--pattern}
+@item --pattern=PATTERN
+@itemx -e PATTERN
+Use PATTERN as the pattern.
+
+@cindex @option{--verbose}
+@item --verbose
+@itemx -v
+Explain what is being done.
+
+@cindex @option{--help}
+@item --help
+Display a short help and exit.
+
+@cindex @option{--usage}
+@item --usage
+Same as @option{--help} option.
+
+@cindex @option{--version}
+@item --version
+Print version information and exit.
+
+@cindex @option{--author}
+@item --author
+Print author information and exit.
+
+@cindex @option{--copyleft}
+@item --copyleft
+Print the short version of GNU/GPL and exit.
+@end table
+
+@node Environment Variables, Diagnostics, Invoking, Top
+@unnumbered Environment Variables
+@cindex Environment shell variables
+The behavior of @value{prm-cmd-name} is affected
+by the following environment variables.
+
+@table @option
+@cindex @option{GFS_INPUT}
+@item GFS_INPUT
+Specifies the input file.
+@end table
+
+@node Diagnostics, Problems, Environment Variables, Top
+@unnumbered Diagnostics
+@cindex Return values
+Normally, exit status is 0 if selected lines are found and
+1 otherwise. But the exit status is 2 if an error occurred.
+
+@node Problems, Concept Index, Diagnostics, Top
+@unnumbered Reporting Bugs
+@cindex Email reporting bugs
+
+If you find a bug in @value{prm-sht-name}, please send electronic mail to:
+
+@samp{@email{@value{prm-report-bugs}}}
+
+@node Concept Index, , Problems, Top
+@ifnotplaintext
+@unnumbered Concept Index
+@cindex Tail recursion
+
+@printindex cp
+@end ifnotplaintext
+
+@bye

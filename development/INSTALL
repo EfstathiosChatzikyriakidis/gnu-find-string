@@ -1,0 +1,26 @@
+GNU fs -- `INSTALL' starts here.
+
+Install:
+
+  If you want to install or uninstall the program you must first
+  use a shell. Next, be sure that your current working directory
+  is the `src' directory.
+
+  You can perform this by using the `pwd' and `cd' commands.
+
+  Now, you can run the `install-gui.sh' or 'install-nox.sh' shell
+  script depending on your inteface. If you select the graphical
+  installation script, you must have `zenity' package installed.
+
+  Also, you should have superuser privileges.
+
+  Run the appropriate installation shell script:
+
+    $ ./install-gui.sh (for gui mode).
+    $ ./install-nox.sh (for text-based mode).
+
+  When the select list appear, select the appropriate option.
+
+  Happy Hacking!
+
+GNU fs -- `INSTALL' ends here.

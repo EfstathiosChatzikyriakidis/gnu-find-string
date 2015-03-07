@@ -1,0 +1,24 @@
+GNU fs -- `NEWS' starts here.
+
+News:
+
+  History of user-visible changes.
+
+  v. 1.0
+
+    * add environment variable `GFS_INPUT'.
+
+    * add short option `-r, --reverse-match'.
+    * add short option `-m, --max-matches'.
+    * add short option `-n, --line-number'.
+    * add short option `-i, --ignore-case'.
+    * add short option `-e, --pattern'.
+    * add short option `-v, --verbose'.
+
+    * add long option `--usage'.
+    * add long option `--help'.
+    * add long option `--version'.
+    * add long option `--author'.
+    * add long option `--copyleft'.
+
+GNU fs -- `NEWS' ends here.
