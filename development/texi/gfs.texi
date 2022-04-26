@@ -4,7 +4,7 @@
 @c
 @c  This file is the texinfo manual page for GNU fs.
 @c
-@c  Copyright (C) 2008  Efstathios Chatzikyriakidis (contact@efxa.org)
+@c  Copyright (C) 2008  Efstathios Chatzikyriakidis (stathis.chatzikyriakidis@gmail.com)
 @c
 @c  This program is free software: you can redistribute it and/or modify
 @c  it under the terms of the GNU General Public License as published by

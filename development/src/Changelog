@@ -2,11 +2,11 @@ GNU fs -- `Changelog' starts here.
 
 Changelog:
 
-  23/04/2008  Efstathios Chatzikyriakidis (contact@efxa.org)
+  23/04/2008  Efstathios Chatzikyriakidis (stathis.chatzikyriakidis@gmail.com)
 
     * add block comments for `doxygen'.
 
-  23/03/2008  Efstathios Chatzikyriakidis (contact@efxa.org)
+  23/03/2008  Efstathios Chatzikyriakidis (stathis.chatzikyriakidis@gmail.com)
 
     * add file `Makefile'.
     * add GNU General Public License to all source code files.

@@ -4,7 +4,7 @@
 #
 #  This file contains all the greek messages for the GNU fs program.
 #
-#  Copyright (C) 2008  Efstathios Chatzikyriakidis (contact@efxa.org)
+#  Copyright (C) 2008  Efstathios Chatzikyriakidis (stathis.chatzikyriakidis@gmail.com)
 #
 #  This program is free software: you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: <bug-gnu-fs@gnu.org>\n"
 "POT-Creation-Date: 2008-03-25 12:59+0200\n"
 "PO-Revision-Date: 2008-03-25 13:11+0200\n"
-"Last-Translator: Efstathios Chatzikyriakidis <contact@efxa.org>\n"
+"Last-Translator: Efstathios Chatzikyriakidis <stathis.chatzikyriakidis@gmail.com>\n"
 "Language-Team: Greek <bug-gnu-fs@gnu.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

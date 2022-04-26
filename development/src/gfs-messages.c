@@ -3,7 +3,7 @@
  *
  *  This interface contains all the string messages.
  *
- *  Copyright (C) 2008  Efstathios Chatzikyriakidis (contact@efxa.org).
+ *  Copyright (C) 2008  Efstathios Chatzikyriakidis (stathis.chatzikyriakidis@gmail.com).
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -56,11 +56,11 @@ cstring send_bugs_mail = N_("Report bugs to <bug-gnu-fs@gnu.org>");
    \brief GNU General Public License (part a).
 */
 cstring license_part_a =
- "Copyright (C) 2008  Efstathios Chatzikyriakidis (contact@efxa.org).    \n"
- "                                                                      \n"
- "This program is free software: you can redistribute it and/or modify  \n"
- "it under the terms of the GNU General Public License as published by  \n"
- "the Free Software Foundation, either version 3 of the License, or     \n";
+ "Copyright (C) 2008  Efstathios Chatzikyriakidis (stathis.chatzikyriakidis@gmail.com). \n"
+ "                                                                                      \n"
+ "This program is free software: you can redistribute it and/or modify                  \n"
+ "it under the terms of the GNU General Public License as published by                  \n"
+ "the Free Software Foundation, either version 3 of the License, or                     \n";
 
 /*!
    \var license_part_b
